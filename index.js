@@ -1,4 +1,5 @@
 console.clear();
+require('dotenv-safe').config();
 
 const path = require('path');
 const express = require('express');
@@ -12,7 +13,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './public/home.html'));
 });
 
-const port = 10100;
+const port = process.env.APP_PORT;
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);

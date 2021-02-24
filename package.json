@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/fmlimao/projetosfm#readme",
   "dependencies": {
+    "dotenv-safe": "^8.2.0",
     "express": "^4.17.1"
   }
 }
